@@ -1,4 +1,7 @@
 def reverse_each_word(sentence)
-  sentence.map do |words| 
-    words.reverse
+  new_sentence = []
+  sentence.map do |words|
+    new_sentence << words.reverse
+  end
+  new_sentence
 end
