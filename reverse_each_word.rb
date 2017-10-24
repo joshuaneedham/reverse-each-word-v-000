@@ -1,4 +1,5 @@
 def reverse_each_word(sentence)
-  sentence.map { |words| words(&:reverse) }
-  end
+  new_sentence = []
+  sentence.map { |words| new_sentence << words(&:reverse) }
+  new_sentence
 end
